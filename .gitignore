@@ -1,0 +1,35 @@
+# Python-related files
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+*.pdb
+
+# Virtual environment
+venv/
+env/
+
+# Logs and TensorBoard files
+*.log
+training/dqn_tensorboard/
+training/ppo_tensorboard/
+
+# Model files
+models/dqn/
+models/pg/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# Animation files
+*.mp4
+*.gif
+
+# FreeGLUT folder
+freeglut-3.6.0/
+
+# License folder
+LICENSE/
