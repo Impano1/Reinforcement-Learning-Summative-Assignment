@@ -20,17 +20,17 @@ class TrafficEnv(gym.Env):
         return self.state, {}
 
     def step(self, action):
-        # Example step logic
+        
         # Simulate traffic density changes based on the action
         if action == 1:  # Change traffic light
             self.state = np.maximum(self.state - np.random.randint(10, 30, size=self.state.shape), 0)
-        else:  # Keep current traffic light
+        else:  
             self.state = np.minimum(self.state + np.random.randint(5, 15, size=self.state.shape), 100)
         
         # Calculate reward (negative of total traffic density)
         reward = -np.sum(self.state)
         
         # Check if the episode is done (e.g., after a fixed number of steps)
-        done = np.all(self.state < 10)  # Example condition: all intersections have low traffic
+        done = np.all(self.state < 10)  
         
         return self.state, reward, done, False, {}

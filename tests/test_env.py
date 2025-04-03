@@ -8,7 +8,7 @@ print("Initial State:", state)
 
 # Take random actions
 for _ in range(10):
-    action = env.action_space.sample()  # Random action
+    action = env.action_space.sample()  
     state, reward, done, _, _ = env.step(action)
     print(f"Action: {action}, State: {state}, Reward: {reward}, Done: {done}")
     if done:

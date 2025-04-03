@@ -12,12 +12,12 @@ env = TrafficEnv()
 
 # Initialize the PPO model
 model = PPO(
-    "MlpPolicy",  # Policy type
-    env,          # Custom environment
-    learning_rate=0.0003,  # Learning rate
-    gamma=0.98,            # Discount factor
-    n_steps=2048,          # Number of steps per update
-    verbose=1              # Verbosity level
+    "MlpPolicy",  
+    env,          
+    learning_rate=0.0003,  
+    gamma=0.98,            
+    n_steps=2048,          
+    verbose=1              
 )
 
 # Train the model

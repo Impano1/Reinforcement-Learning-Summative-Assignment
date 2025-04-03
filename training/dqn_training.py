@@ -12,11 +12,11 @@ env = TrafficEnv()
 
 # Initialize the DQN model
 model = DQN(
-    "MlpPolicy",  # Policy type
-    env,          # Custom environment
-    learning_rate=0.0005,  # Learning rate
-    gamma=0.99,            # Discount factor
-    verbose=1              # Verbosity level
+    "MlpPolicy",  
+    env,          
+    learning_rate=0.0005,  
+    gamma=0.99,            
+    verbose=1              
 )
 
 # Train the model

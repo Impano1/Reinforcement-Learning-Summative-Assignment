@@ -8,6 +8,6 @@ if __name__ == "__main__":
     # Reset the environment
     state, _ = env.reset()
 
-    # Example traffic density visualization
+    
     print("Visualizing Traffic...")
     visualize_traffic(state)
